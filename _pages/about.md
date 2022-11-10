@@ -1,6 +1,12 @@
 ---
 title: "About"
 permalink: /about/
-date: 2019-02-15
+date: 2022-11-17
 ---
 
+
+
+
+
+
+                            I write posts about things and I read the things that others post ;)
