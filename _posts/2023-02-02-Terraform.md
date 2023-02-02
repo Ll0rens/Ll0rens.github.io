@@ -20,7 +20,27 @@ tags:
 
 ## What is Infrastructure as Code (IaC)
 
+The main aim of Infrastructure as code is to write and execute code to define, deploy, update and destroy the infrastructure.
+
+There are five broad categories of IAC tools:
+- Ad hoc Scripts
+- Configuration management Tools
+- Server templating tools
+- Orchestration tools
+- Provisioning tools
+
 ## Ad Hoc Scripts
+
+The most common way to automating anything is to write an `ad hoc script`. Basically, it means breaking a task in different steps using a scripting language (Bash, Ruby, Python) to define each of those steps and execute that script on your server.
+
+For example:
+```bash
+# Update the apt-get cache
+sudo apt-get update
+sudo apt-get install -y php apache2
+sudo git clone http//DOMAIN_NAME
+sudo service apache2 start
+```
 
 ## Configuration Management Tools
 
