@@ -85,8 +85,8 @@ If you are using server templating tools such as Docker or Packer, the vast majo
 
 The reality is that you will  likely need to use multiple tools to build your infrastructure.
 
-- Provisioning + Configuration Management: Terraform and Ansible. You use Terraform to deploy all the underlying infrastructure, including the network topology and you use Ansible to deploy your apps on the top of those servers.
+- `Provisioning + Configuration Management:` Terraform and Ansible. You use Terraform to deploy all the underlying infrastructure, including the network topology and you use Ansible to deploy your apps on the top of those servers.
 
-- Provisioning + Server Templating: Terraform and Packer. Use Packer to package your apps as VM images and then use Terraform to deploy servers with these images and the rest of the infrastructure.
+- `Provisioning + Server Templating:` Terraform and Packer. Use Packer to package your apps as VM images and then use Terraform to deploy servers with these images and the rest of the infrastructure.
 
-- Provisioning + Server Templating + Orchestation: Terraform, Packer, Docker and Kubernetes. You use Packer to create a VM image that has Docker and Kubernetes installed. You then use Terraform to deploy a cluster of servers (each one using this VM image) and the rest of the infrastructure. Finally, when the cluster of servers boots up, it forms a Kubernetes cluster that you use to run and manage your Dockerized applications. 
+- `Provisioning + Server Templating + Orchestation:` Terraform, Packer, Docker and Kubernetes. You use Packer to create a VM image that has Docker and Kubernetes installed. You then use Terraform to deploy a cluster of servers (each one using this VM image) and the rest of the infrastructure. Finally, when the cluster of servers boots up, it forms a Kubernetes cluster that you use to run and manage your Dockerized applications.
