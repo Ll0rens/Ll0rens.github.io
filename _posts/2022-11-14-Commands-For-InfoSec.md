@@ -282,7 +282,7 @@ CTRL + Z
 
 `kill %`: kill the process that is at the back
 
-#Enumeration
+# Enumeration
 `hydra -l user -P passwordsFile.txt ftp://IP -t 15`
 - -l: indicates the user
 - -t: number of threads
