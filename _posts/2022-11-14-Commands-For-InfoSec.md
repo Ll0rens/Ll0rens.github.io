@@ -287,6 +287,7 @@ CTRL + Z
 `hydra -l user -P passwordsFile.txt ftp://IP -t 15`
 - -l: indicates the user
 - -t: number of threads
+
 ## SSH
 `hydra -l user -P passwordsFile.txt ssh://IP -s PORT -t 15`
 - -s: port to use
