@@ -2,7 +2,7 @@
 layout: single
 title: AWS - Migrations and Hybrid Architectures
 excerpt: "Deep dive into AWS Migrations services. In this article we will deepen in the migration services and introduce you to the Hybrid Architectures."
-date: 2023-07-28
+date: 2023-07-17
 classes: wide
 header:
   teaser: /assets/images/aws-logo.png
@@ -10,10 +10,9 @@ header:
   icon: /assets/images/aws-logo.png
 categories:
   - Amazon Web Services
-  - Cloud computing
 tags:  
   - Amazon Web Services
-  - Cloud Computings
+  - Cloud Computing
 ---
 ## VPC
 

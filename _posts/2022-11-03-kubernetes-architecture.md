@@ -9,12 +9,10 @@ header:
   teaser_home_page: true
   icon: /assets/images/kubernetes-logo.png
 categories:
-  - Kubernetes
+  - DevOps
 tags:  
   - kubernetes
   - DevOps
-  - Docker
-  - microservices
 ---
 
 ![](/assets/images/kubernetes-logo.png.png)

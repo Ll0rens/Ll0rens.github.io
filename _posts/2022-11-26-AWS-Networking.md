@@ -10,7 +10,6 @@ header:
   icon: /assets/images/aws-logo.png
 categories:
   - Amazon Web Services
-  - Cloud computing
 tags:  
   - Amazon Web Services
   - Cloud Computing

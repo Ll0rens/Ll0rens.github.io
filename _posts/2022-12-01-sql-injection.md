@@ -10,9 +10,9 @@ header:
   icon: /assets/images/aws-logo.png
 categories:
   - InfoSec
-tags:  
+tags: 
+  - InfoSec
   - SQLI
-  - Cloud Computing
 ---
 ## General Injections
 `' or 1=1-- -`

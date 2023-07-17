@@ -10,7 +10,6 @@ header:
   icon: /assets/images/terraform-logo.png
 categories:
   - DevOps
-  - Terraform
 tags:  
   - terraform
   - devops
