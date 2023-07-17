@@ -282,7 +282,7 @@ CTRL + Z
 
 `kill %`: kill the process that is at the back
 
-# Enumeration
+# Enumeration of common services and content managers
 ## FTP
 `hydra -l user -P passwordsFile.txt ftp://IP -t 15`
 - -l: indicates the user
@@ -291,3 +291,10 @@ CTRL + Z
 ## SSH
 `hydra -l user -P passwordsFile.txt ssh://IP -s PORT -t 15`
 - -s: port to use
+
+## HTTP & HTTPS
+`openssl s_client -connect DOMAIN:PORT`
+
+`sslyze DOMAIN`
+
+`sslsan DOMAIN`
