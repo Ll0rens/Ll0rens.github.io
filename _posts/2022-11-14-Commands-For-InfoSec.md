@@ -298,3 +298,25 @@ CTRL + Z
 `sslyze DOMAIN`
 
 `sslsan DOMAIN`
+
+## SMB
+`mount -t cifs URL /folder/to/mount/in/your/pc -o username=null,password=null,domain=,rw`: create a mount in your pc
+`CrackMapExec`
+
+# Gestores de contenido (CMS)
+
+## WORDPRESS
+
+`wpscan --url URL`
+- api token
+- plugins
+- xmlrpc.php
+
+## JOOMLA
+`joomscan`
+
+## DRUPAL
+`droopescan`
+
+## MAGENTO
+`Magescan`
