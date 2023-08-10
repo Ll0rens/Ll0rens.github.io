@@ -42,3 +42,24 @@ These are the nodes that control the cluster. In the diagram above it can bee se
 - Container engine: The aim of this component is to deploy the containers, so this component needs to be installed in every node of the cluster that a Pod can be deployed.
 - Kubelet: This components is in charge of deploying the containers in the Pod. In other words, when the `kube-scheduler` decides in which node the Pod has to be deployed, `kubelet` interacts with `kube-apiserver`, receives that information and thanks to the `container engine` it deploys the containers in the Pod.
 - Kube-proxy: This component is in charge of controlling the internal network traffic inside the cluster. Any kind of network traffic of a Pod passes through this component and it routes that traffic to its destination.
+
+## Namespaces
+
+Linux namespaces make it possible to run a whole range of applications on a single real machine and ensure no two of them can interfere with each other, without having to resort to using virtual machines.
+
+In **Kubernetes**, namespaces are virtual clusters backed by the same physical cluster. Kubernetes objects, such as pods and containers, live in namespaces. Namespaces are a way to separate and organize objects in your cluster.
+
+List namepaces:
+
+`kubectl get namespaces`
+
+All clusters have a **default** namespace
+
+It is possible to specify a namespace for each command:
+
+`kubectl get pods --namespace my-namespace`
+`kubectl get pods -n my-namespace`
+`kubectl get pods --all-namespaces`
+
+Create a namespace:
+`kubectl create namespace my-namespace`
